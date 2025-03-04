@@ -3,60 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe | Portfolio</title>
+    <title>StratDev Digital Marketing</title>
     <style>
-        :root { --primary: #2ecc71; --dark: #2c3e50; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; }
-        
-        .hero {
-            background: linear-gradient(rgba(44,62,80,0.9), rgba(44,62,80,0.9)),
-                        url('https://source.unsplash.com/random/1920x1080') center/cover;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
+        body {
+            font-family: Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
         }
-
-        .projects {
-            padding: 4rem 2rem;
-            display: grid;
-            grid-gap: 2rem;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
-
-        .card {
-            background: white;
-            border-radius: 10px;
-            padding: 1.5rem;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        h1, h2, h3 {
+            color: #4d65ff;
         }
-
-        @media (max-width: 768px) {
-            .projects { grid-template-columns: 1fr; }
+        p {
+            color: #ccc;
+        }
+        .testimonial {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #111;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <section class="hero">
-        <div>
-            <h1>John Doe</h1>
-            <p>Full Stack Developer</p>
-            <nav style="margin-top: 2rem;">
-                <a href="#work" style="color: white; text-decoration: none; margin: 0 1rem;">Work</a>
-                <a href="#contact" style="color: white; text-decoration: none; margin: 0 1rem;">Contact</a>
-            </nav>
-        </div>
-    </section>
-
-    <section class="projects">
-        <div class="card">
-            <h3>Project 1</h3>
-            <p>Modern e-commerce platform built with React & Node.js</p>
-        </div>
-        <!-- Add more project cards -->
-    </section>
+    <div class="container">
+        <header>
+            <h1>StratDev Digital Marketing</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Our Services</h2>
+                <div class="testimonial">
+                    <h3>Social Media Ads & Management</h3>
+                    <p>Why your kids are always online.</p>
+                </div>
+                <div class="testimonial">
+                    <h3>Web Design & Development</h3>
+                    <p>Your 24/7 salesperson.</p>
+                </div>
+                <div class="testimonial">
+                    <h3>Digital PR</h3>
+                    <p>Look ma’, I made it!</p>
+                </div>
+                <div class="testimonial">
+                    <h3>SEO</h3>
+                    <p>Just Google It.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 StratDev. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
